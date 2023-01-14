@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script async defer src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Personal Dashboard</title>
   </head>
   <body>
     <div class="container">
-      <div class="section_1">
+      <div class="section_1 grow" >
         <div id="crypto">
-          <div id="bitcoin"><i class="fa-solid fa-house"></i></div>
+          <div id="bitcoin"></div>
           <div id="dogecoin"></div>
           <div id="ethereum"></div>
           <div id="litecoin"></div>
         </div>
-
         <div id="weather">
-          <p><i class="fa-solid fa-cloud-sun"></i></p>
-          Weather
+          <p id="temp"><i class="fa-solid fa-cloud-sun"></i></p>
+          <p id="city"></p>
         </div>
       </div>
-      <div class="section_2">
-        <h1>Time</h1>
+      <div class="section_2 grow">
+        <h1 id="time"></h1>
       </div>
-      <div class="section_3">
-        <h3 id="credit"></h3>
+      <div class="section_3 grow">
+        <h3 id="credit"></>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
