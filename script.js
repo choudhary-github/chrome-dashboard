@@ -11,7 +11,6 @@ fetch(
     return res.json();
   })
   .then((data) => {
-    console.log(data.urls)
     document.body.style.backgroundImage = `url(${data.urls.full})`;
     document.getElementById("credit").innerHTML = data.user.name;
     // throw Error("I am an error!");
@@ -20,9 +19,9 @@ fetch(
     document.body.style.backgroundImage = `url(https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzOTg4Mjd8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzM2ODYzMDQ&ixlib=rb-4.0.3&q=80&w=1080)`;
     document.getElementById("credit").innerHTML = "Yousef Espanioly";
 
-    console.log(error);
+    console.error(error);
   })
-  .catch((err) => console.log(err));
+  .catch((err) => console.error(err));
 
 let length = array.length;
 for (let i = 0; i < length; i++) {
@@ -71,4 +70,4 @@ fetch(
     `;
     document.getElementById("city").innerText = cityName;
   })
-  .catch((err) => console.log(err));
+  .catch((err) => console.error(err));
